@@ -17,13 +17,23 @@
 //      margin-top: 14px;
 // }
 
-//_home.scss
-// #home-watermark {
-// 	background-position: right bottom;
-// }
-// #nav-developers {
-//     background: #96161A;
-// }
-// #home-developers {
-//     background: #96161A;
-// }
+_home.scss
+#home-watermark {
+ 	background-position: right bottom;
+}
+
+// _header.scss
+#brand-logo img {
+            width: 84px;
+}
+
+#organization-logo {
+    float: left;
+    img {
+        width: 190px;
+        @media screen and (min-width: $screen-tablet) {
+            width: 190px;
+            margin: 0 auto;
+        }
+    }
+}
