@@ -14,27 +14,31 @@ class Theme extends BaseV1\Theme{
         $url_search_projects = $self->searchProjectsUrl;
 
         return [
-            'site: name' => App::i()->config['app.siteName'],
+            'site: name' => 'Mapa Cultural BH',
             'site: description' => App::i()->config['app.siteDescription'],
             'site: in the region' => 'na região',
             'site: of the region' => 'da região',
             'site: owner' => 'Secretaria',
             'site: by the site owner' => 'pela Secretaria',
 
-            'home: title' => "Bem-vind@!",
+            'home: title' => "Mapear para reconhecer, valorizar e proteger!",
+            // 'home: title' => "Bem-vind@!",
             'home: abbreviation' => "Fundação Municipal de Cultura",
             'home: colabore' => "Colabore com o Mapas Culturais",
-            'home: welcome' => "A Fundação Municipal de Cultura disponibiliza para a comunidade belo-horizontina e todo o Brasil,
-				informações sobre o cenário cultural da cidade de Belo Horizonte no Mapa Cultura BH. O Mapa Cultura
-				BH é uma plataforma de software livre e gratuita para o mapeamento colaborativo de agentes, espaços,
-				eventos e projetos culturais da cidade. A plataforma é alimentada pelos próprios participantes e está
-				alinhada ao Sistema Nacional de Informações e Indicadores Culturais (SNIIC) do Ministério da Cultura,
-				permitindo a integração e a visualização das informações culturais em âmbito nacional. Ficou mais fácil
-				se programar para conhecer as opções culturais que a cidade oferece: shows musicais, espetáculos de
-				teatro e dança, cinema, festas e manifestações tradicionais e populares, saraus, entre outras. Além de
-				acompanhar a agenda de eventos, você também pode colaborar na gestão da cultura da cidade: basta criar
-				seu perfil de agente cultural. A partir deste cadastro, você pode participar dos editais de fomento e
-				divulgar seus eventos, espaços ou projetos.",
+    //         'home: welcome' => "A Fundação Municipal de Cultura disponibiliza para a comunidade belo-horizontina e todo o Brasil,
+				// informações sobre o cenário cultural da cidade de Belo Horizonte no Mapa Cultura BH. O Mapa Cultura
+				// BH é uma plataforma de software livre e gratuita para o mapeamento colaborativo de agentes, espaços,
+				// eventos e projetos culturais da cidade. A plataforma é alimentada pelos próprios participantes e está
+				// alinhada ao Sistema Nacional de Informações e Indicadores Culturais (SNIIC) do Ministério da Cultura,
+				// permitindo a integração e a visualização das informações culturais em âmbito nacional. Ficou mais fácil
+				// se programar para conhecer as opções culturais que a cidade oferece: shows musicais, espetáculos de
+				// teatro e dança, cinema, festas e manifestações tradicionais e populares, saraus, entre outras. Além de
+				// acompanhar a agenda de eventos, você também pode colaborar na gestão da cultura da cidade: basta criar
+				// seu perfil de agente cultural. A partir deste cadastro, você pode participar dos editais de fomento e
+				// divulgar seus eventos, espaços ou projetos.",
+
+            'home: welcome' => "O Mapa Cultural BH é uma plataforma de software livre, gratuita e colaborativa da Fundação Municipal de Cultura (FMC), com diversas informações sobre o cenário cultural da cidade de Belo Horizonte. A plataforma é alimentada pela FMC com informações sobre os espaços culturais, programações oficiais, projetos e editais; e pela população, que se cadastra como agente (individual ou coletivo) e pode divulgar sua própria programação. Outro aspecto importante do Mapa Cultural BH é o seu alinhamento com o Sistema Nacional de Informações e Indicadores Culturais (SNIIC) do Ministério da Cultura, que permite a integração e a visualização das informações culturais em âmbito nacional.
+    Agora, você pode se programar para conhecer as opções culturais que a cidade oferece: shows, musicais, espetáculos de teatro e dança, cinema, festas, saraus e manifestações tradicionais e populares, entre outras. Além de acompanhar a agenda de eventos, você também pode colaborar na gestão da cultura da cidade, para isso basta criar seu perfil de agente cultural e a partir deste cadastro, participar dos editais de fomento e divulgar seus eventos, espaços ou projetos.",
 
             'home: events' => "Você pode pesquisar eventos culturais nos campos de busca combinada. Como usuário cadastrado, você pode incluir seus eventos na plataforma e divulgá-los gratuitamente.",
             'home: agents' => "Você pode colaborar na gestão da cultura com suas próprias informações, preenchendo seu perfil de agente cultural. Neste espaço, estão registrados artistas, gestores e produtores; uma rede de atores envolvidos na cena cultural da região. Você pode cadastrar um ou mais agentes (grupos, coletivos, bandas instituições, empresas, etc.), além de associar ao seu perfil eventos e espaços culturais com divulgação gratuita.",
