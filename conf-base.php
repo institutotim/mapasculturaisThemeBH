@@ -29,9 +29,9 @@ return [
    // descomente para definir quais fivisões geográficas são utilizadas no tema
    // devem ser as mesmas dos shapefiles
    'app.geoDivisionsHierarchy' => [
+       'regional'       => 'Regional',
+       'bairro'         => 'Bairro',
        'quadra_bh'      => 'Quadra',
-       'bairro'         => 'Bairro', //ok
-       'regional'       => 'Regional', //ok
-       'mesorregiao'    => 'Entorno',
+       // 'mesorregiao'    => 'Entorno',
    ],
 ];
