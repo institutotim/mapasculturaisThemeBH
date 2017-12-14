@@ -30,8 +30,9 @@ return [
    // devem ser as mesmas dos shapefiles
    'app.geoDivisionsHierarchy' => [
        'regional'       => 'Regional',
+	'territorio'	=> 'Território',
        'bairro'         => 'Bairro',
-       'quadra_bh'      => 'Quadra',
+      // '_quadra_bh'      => 'Quadra',
        // 'mesorregiao'    => 'Entorno',
    ],
 ];
