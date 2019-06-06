@@ -1,0 +1,22 @@
+<div class="alert success">
+    <?php \MapasCulturais\i::_e("Inscrição enviada no dia");?>
+    <?php echo $entity->sentTimestamp->format('d/m/Y à\s H:i:s'); ?>
+</div>
+
+<h3 class="registration-header"><?php \MapasCulturais\i::_e("Formulário de Inscrição");?></h3>
+
+<div class="registration-fieldset clearfix">
+    <h4><?php \MapasCulturais\i::_e("Número da Inscrição");?></h4>
+    <div class="registration-id alignleft">
+        <?php echo $entity->number ?>
+    </div>
+    <div class="alignright">
+        <?php 
+		  $proj = array(116,117,118,135,136,137,245,249,250,251,261,264,409);
+		if($project->publishedRegistrations || (in_array($project->id, $proj))): ?>
+            <span class=" status-{{getStatusSlug(<?php echo $entity->status ?>)}}">{{getStatusNameById(<?php echo $entity->status ?>)}}</span>
+        <?php elseif($project->canUser('@control')): ?>
+            <mc-select class="{{getStatusSlug(data.registration.status)}}" model="data.registration" data="data.registrationStatusesNames" getter="getRegistrationStatus" setter="setRegistrationStatus"></mc-select>
+        <?php endif; ?>
+    </div>
+</div>
