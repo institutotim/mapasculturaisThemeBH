@@ -1,9 +1,10 @@
 <?php
 namespace mapasculturaisThemeBH;
-use MapasCulturais\Themes\BaseV1;
+//use MapasCulturais\Themes\BaseV1;
 use MapasCulturais\App;
 
-class Theme extends BaseV1\Theme{
+//class Theme extends BaseV1\Theme{
+class Theme extends \MapasCulturais\Themes\BaseV1\Theme {
 
     protected static function _getTexts(){
         $app = App::i();
